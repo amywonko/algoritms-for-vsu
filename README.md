@@ -1,1 +1,0 @@
-# algoritms-for-vsu
