@@ -1,10 +1,8 @@
 alpha = "aбвгдеёждзийклмнопрстуфхцчшщъьэюя"
 secret = input("Введите свое сообщение:\n ")
 secret = secret.lower()
-text = ""
 key = input("Введите ключ:\n ")
-k = len(key)
+key *= len(secret) // len(key) + 1
 
-for i in secret:
-    text+= alpha[(alpha.index(i) + k) % len(alpha)]
+text = ''.join([chr((ord(j) + ord(key[i])) % 33 + ord('А')) for i, j in enumerate(secret)])
 print('Ваше сообщение: "' + text + '"')
