@@ -15,7 +15,7 @@ void fillBoard();
 void mainMenu();
 void startGame();
 
-//главное меню со стартом игры
+//РіР»Р°РІРЅРѕРµ РјРµРЅСЋ СЃРѕ СЃС‚Р°СЂС‚РѕРј РёРіСЂС‹
 int main()
 {
    mainMenu();
@@ -50,7 +50,7 @@ void mainMenu()
         
    }
 }
-//старт игры условия победы
+//СЃС‚Р°СЂС‚ РёРіСЂС‹ Рё СѓСЃР»РѕРІРёСЏ РїРѕР±РµРґС‹
 void startGame()
 {
    do
@@ -110,7 +110,7 @@ bool checkBoard()
       }  
    return 1;
 }
-//дизайн поля
+//РґРёР·Р°Р№РЅ РїРѕР»СЏ
 void showBoard()
 {
    system("cls");
@@ -132,7 +132,7 @@ void showBoard()
    }
       std::cout << "-------------" << std::endl;
 }
-//выбор пользователя
+//РІС‹Р±РѕСЂ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 void changeBoard()
 {
    bool y = 0;
@@ -180,7 +180,7 @@ void changeBoard()
             std::cout << "Incorrect turn! Try again!" << std::endl;
    }
 }
-//создание игравого поля
+//Р·Р°РїРѕР»РµРЅРёРµ РїРѕР»СЏ С‡РёСЃР»Р°РјРё
 void fillBoard()
 {
    bool already[15] = {0};
